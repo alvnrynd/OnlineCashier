@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EditStoreActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round20_white"
+        android:contentDescription="@string/todo"
+        android:padding="7dp"
+        android:src="@drawable/ic_round_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_back"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_bank_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bg_round20_white"
+                android:text="@string/simpan"
+                android:textColor="@color/primary_light"
+                app:backgroundTint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_name_owner"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_store_name"
+                android:layout_centerHorizontal="true"
+                android:enabled="false"
+                android:hint="@string/nama_pemilik"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:selectAllOnFocus="true"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_email_owner"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_name_owner"
+                android:layout_centerHorizontal="true"
+                android:enabled="false"
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_number_owner"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email_owner"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/no_handphone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_address_owner"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_number_owner"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/alamat"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textCapWords"
+                android:maxHeight="40dp"
+                android:minLines="2"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_number_rek_owner"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_address_owner"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/nomor_rekening"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_bank_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_number_rek_owner"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/nama_bank"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textCapCharacters"
+                android:selectAllOnFocus="true"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_store_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:autofillHints=""
+                android:hint="@string/nama_toko"
+                android:inputType="textCapWords"
+                android:selectAllOnFocus="true"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/img_back"
+        android:text="@string/edit_toko"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "472018373888",
+    "project_id": "onlinecashier",
+    "storage_bucket": "onlinecashier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472018373888:android:a6bb8467c82c37ba87f7e5",
+        "android_client_info": {
+          "package_name": "com.codeart.onlinecashier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472018373888-2rnu309sfoo32jdce7dvq1jvbohdsdsq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codeart.onlinecashier",
+            "certificate_hash": "9e16361c1ece761eddb99136ea7bc9b6d2ed4b90"
+          }
+        },
+        {
+          "client_id": "472018373888-o1j35m4kk1drdchi5gs5pk5h5gjim5hh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWvptv3HFbgNoaKtvPDktxd44DpF5qjwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472018373888-o1j35m4kk1drdchi5gs5pk5h5gjim5hh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/str_add_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Diskon\nNilai Diskon (Persen)"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/et_add_discount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/str_add_discount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txt_cancel_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_add_discount"
+            android:layout_marginTop="20dp"
+            android:text="@string/batal"
+            android:textColor="@color/primary_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_save_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_add_discount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/simpan"
+            android:textColor="@color/primary_dark"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
